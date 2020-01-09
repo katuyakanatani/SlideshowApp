@@ -34,27 +34,27 @@ class ViewController: UIViewController {
         imageArray.append(image1!)
         imageArray.append(image2!)
         imageArray.append(image3!)
-        
-        @objc func Slide(_ )
-        
-        
-        while let nextImage = UIImage(named: "sample\(imageArray.count)"){
-        imageArray.append(nextImage)
-    
-        
-        
-        
-    }
   
     }
+    
+    var count = 0
     //進む
     @IBAction func next(_ sender: Any) {
-        img.image = image2
-        
-    }
+        count += 1
+        if count <= 2
+        { img.image = imageArray[count]
+        } else {
+            img.image = imageArray[count%3]
+        }
+        }
     //戻る
     @IBAction func back(_ sender: Any) {
-        img.image = image3
+        count += 2
+        if count <= 2{
+            img.image = imageArray[count]
+        } else {
+        img.image = imageArray[count%3]}
+        
     }
     
     //スライドショー部分
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         
          imageView.animationImages = imageArray
          imageView.animationDuration = 2
-         imageView.animationRepeatCount = 3
+         imageView.animationRepeatCount = 100
         
          imageView.startAnimating()
         
