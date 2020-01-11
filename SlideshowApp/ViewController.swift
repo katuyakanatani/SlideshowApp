@@ -87,17 +87,11 @@ class ViewController: UIViewController {
         } else {
         img.image = imageArray[count%3]}
         
-    //imageViewにタップ機能をつける
-        img.addGestureRecognizer(UITapGestureRecognizer(target:self, action: #selector(ViewController.imageViewTapped(_:))))
+
+    }
+    @IBAction func up(_ sender: Any) {
     }
     
-    @IBAction func upup(_ sender: Any) {
-    }
-    
-    @objc func imageViewTapped(_ sender: UITapGestureRecognizer){
-        
-        
-    }
     
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       let upViewController:UpViewController = segue.destination as! UpViewController
