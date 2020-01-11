@@ -56,12 +56,56 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backBottan" destination="YOJ-5T-qqw" id="WBh-Hz-xdU"/>
                         <outlet property="img" destination="bNj-Ic-FLH" id="hAq-Qb-qJ9"/>
+                        <outlet property="nextBottan" destination="2Ya-dS-Ljp" id="Yyp-2j-KVC"/>
+                        <outlet property="slideBottan" destination="8C4-HI-UGT" id="1hb-AA-lqt"/>
+                        <segue destination="mb0-t3-33m" kind="presentation" identifier="toUpViewController" id="8Jx-Gp-Jc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+        <!--Up View Controller-->
+        <scene sceneID="Nxs-RB-1xq">
+            <objects>
+                <viewController id="mb0-t3-33m" customClass="UpViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NGw-FO-Vhs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-wW-UxH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bN-nc-SfU">
+                                <rect key="frame" x="191.5" y="50" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="QEw-pw-vXL" kind="unwind" unwindAction="unwind:" id="fPL-8p-aKg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sg7-wW-UxH" firstAttribute="leading" secondItem="tRc-uZ-Vjt" secondAttribute="leading" id="4aK-cR-zeu"/>
+                            <constraint firstItem="tRc-uZ-Vjt" firstAttribute="bottom" secondItem="sg7-wW-UxH" secondAttribute="bottom" id="FdL-zL-8f7"/>
+                            <constraint firstItem="5bN-nc-SfU" firstAttribute="top" secondItem="tRc-uZ-Vjt" secondAttribute="top" constant="50" id="I9d-i7-n6Q"/>
+                            <constraint firstItem="5bN-nc-SfU" firstAttribute="centerX" secondItem="NGw-FO-Vhs" secondAttribute="centerX" id="Shb-hN-P3c"/>
+                            <constraint firstItem="sg7-wW-UxH" firstAttribute="top" secondItem="tRc-uZ-Vjt" secondAttribute="top" id="a4Z-XE-hoK"/>
+                            <constraint firstItem="tRc-uZ-Vjt" firstAttribute="trailing" secondItem="sg7-wW-UxH" secondAttribute="trailing" id="lbQ-M6-Bkb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tRc-uZ-Vjt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H9F-cM-Quq"/>
+                    <connections>
+                        <outlet property="imageView" destination="sg7-wW-UxH" id="Upn-RA-eM8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAO-Qj-yjV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QEw-pw-vXL" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="905.79710144927549" y="108.48214285714285"/>
         </scene>
     </scenes>
 </document>

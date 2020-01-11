@@ -16,6 +16,7 @@
 		CE17642F23C61BB800F81691 /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE17642E23C61BB800F81691 /* image_1.jpg */; };
 		CE17643123C61BCB00F81691 /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE17643023C61BCA00F81691 /* image_2.jpg */; };
 		CE17643323C7440C00F81691 /* image_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE17643223C7440C00F81691 /* image_3.jpg */; };
+		CE17643623C775AD00F81691 /* UpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE17643523C775AD00F81691 /* UpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CE17642E23C61BB800F81691 /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_1.jpg; path = "../../画像/image_1.jpg"; sourceTree = "<group>"; };
 		CE17643023C61BCA00F81691 /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_2.jpg; path = "../../画像/image_2.jpg"; sourceTree = "<group>"; };
 		CE17643223C7440C00F81691 /* image_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image_3.jpg; path = "../../画像/image_3.jpg"; sourceTree = "<group>"; };
+		CE17643523C775AD00F81691 /* UpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				CE17641823C6093D00F81691 /* AppDelegate.swift */,
 				CE17641A23C6093D00F81691 /* SceneDelegate.swift */,
 				CE17641C23C6093D00F81691 /* ViewController.swift */,
+				CE17643523C775AD00F81691 /* UpViewController.swift */,
 				CE17641E23C6093D00F81691 /* Main.storyboard */,
 				CE17642123C6093F00F81691 /* Assets.xcassets */,
 				CE17642323C6093F00F81691 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE17641D23C6093D00F81691 /* ViewController.swift in Sources */,
+				CE17643623C775AD00F81691 /* UpViewController.swift in Sources */,
 				CE17641923C6093D00F81691 /* AppDelegate.swift in Sources */,
 				CE17641B23C6093D00F81691 /* SceneDelegate.swift in Sources */,
 			);
