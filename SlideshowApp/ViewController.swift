@@ -90,6 +90,16 @@ class ViewController: UIViewController {
 
     }
     @IBAction func up(_ sender: Any) {
+        if self.timer != nil {
+               slideBottan.setTitle("再生", for: UIControl.State())
+                 timer?.invalidate()
+                 timer = nil
+               nextBottan.isEnabled = true
+               backBottan.isEnabled = true
+             } else {
+               
+                 
+                 }
     }
     
     
